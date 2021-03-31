@@ -20,7 +20,7 @@
     "axios": "^0.21.1",
     "framer-motion": "^3.6.7",
     "jotai": "^0.14.5",
-    "next": "10.0.7",
+    "next": "^10.0.7",
     "next-iron-session": "^4.1.12",
     "react": "17.0.1",
     "react-dom": "17.0.1",

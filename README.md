@@ -2,10 +2,8 @@
 
 ## with TypeScript, form handling, back-end + auth integration, versioning, and more
 
-[![MIT License][https://img.shields.io/github/license/othneildrew/best-readme-template.svg?style=for-the-badge]][https://github.com/othneildrew/best-readme-template/blob/master/license.txt]
+[![MIT License](https://img.shields.io/github/license/othneildrew/best-readme-template.svg?style=for-the-badge)](https://github.com/othneildrew/best-readme-template/blob/master/license.txt)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%dayvista%2Fnext.js-template)
-
----
 
 ## Includes
 
@@ -14,21 +12,21 @@
 
 ### Data Management / Auth
 
-- [Supabase (Postgres Database w/ Built-in Auth, Realtime Sync, and More!)](https://supabase.io)
-- [Next Iron Session (Encrypted Server-Side Cookies for Auth/Data Management)](https://github.com/vvo/next-iron-session)
-- [Axios (Simplified Approach to Fetching Data)](https://github.com/axios/axios)
-- [Jotai (Lightweight Client-Side State Management)](https://github.com/pmndrs/jotai)
-- [SWR (Server-Side State Management w/ Caching)](https://swr.vercel.app/)
+- [Supabase](https://supabase.io) (Postgres Database w/ Built-in Auth, Realtime Sync, and More!)
+- [Next Iron Session](https://github.com/vvo/next-iron-session) (Encrypted Server-Side Cookies for Auth/Data Management)
+- [Axios](https://github.com/axios/axios) (Simplified Approach to Fetching Data)
+- [Jotai](https://github.com/pmndrs/jotai) (Lightweight Client-Side State Management)
+- [SWR](https://swr.vercel.app/) (Server-Side State Management w/ Caching)
 
 ### Design / UI / UX
 
-- [Chakra UI (Wonderful Component / Design Library)](https://chakra-ui.com)
-- [Framer Motion (Equally Wonderful Animation Library)](https://www.framer.com/api/motion/)
+- [Chakra UI](https://chakra-ui.com) (Wonderful Component / Design Library)
+- [Framer Motion](https://www.framer.com/api/motion/) (Equally Wonderful Animation Library)
 
 ### Forms
 
-- [React Hook Form (Simple and Performant Form Library)](https://react-hook-form.com/)
-- [Vest (Validation for Forms, Integrates w/ React Hook Form)](https://ealush.com/vest/#/)
+- [React Hook Form](https://react-hook-form.com/) (Simple and Performant Form Library)
+- [Vest](https://ealush.com/vest/#/) (Validation for Forms, Integrates w/ React Hook Form)
 
 ### Versioning
 
@@ -44,38 +42,39 @@
 
 #### General Commits / Versioning
 
-- To create commits (instead of `git add .` + `git commit -m "your message"`):
+##### Creating Commits (instead of using `git add .` + `git commit -m "your message"`)
 
 ```js
 npm run commit
 ```
 
-- To bump versions:
+##### Bumping Versions
 
 ```js
 npm run release
 
 ```
 
-- Bumping first major version:
+##### Bumping First Major Version
 
 ```js
 npm run release -- --release-as 1.0.0
 ```
 
----
-
 ## TODO
 
+- Explain usage / deployment
+- Add Ackee analytics implementation
+- Add Next-SEO library
 - Add testing library (such as [Cypress](https://www.cypress.io/)) with instructions on initialization/usage
 
 ## Contributing
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/SomeCoolFeature`)
-3. Commit your Changes (`git commit -m 'Add some SomeCoolFeature'`)
-4. Push to the Branch (`git push origin feature/SomeCoolFeature`)
-5. Open a Pull Request
+2. Create your feature branch (`git checkout -b feature/SomeCoolFeature`)
+3. Commit your changes (`git commit -m 'Add some SomeCoolFeature'`)
+4. Push to the branch (`git push origin feature/SomeCoolFeature`)
+5. Open a PR (pull request)
 
 ## License
 
@@ -84,4 +83,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Acknowledgements
 
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
-- [Medium Article by Christian Ing Sunardi: Automate JavaScript project versioning with commitizen and standard-version](https://medium.com/tunaiku-tech/automate-javascript-project-versioning-with-commitizen-and-standard-version-6a967afae7)
+- [Automate JavaScript project versioning with commitizen and standard-version](https://medium.com/tunaiku-tech/automate-javascript-project-versioning-with-commitizen-and-standard-version-6a967afae7) by Christian Ing Sunardi
