@@ -64,6 +64,7 @@ npm run release -- --release-as 1.0.0
 ## TODO
 
 - Explain general usage / deployment
+- Switch to Vercel's [`release`](https://github.com/vercel/release) for versioning?
 - Create How-To section (similar to the `Versioning` section)
 - Add [Ackee analytics](https://docs.ackee.electerious.com/#/)
 - Add [Next-SEO](https://github.com/garmeeh/next-seo)
