@@ -64,8 +64,8 @@ npm run release -- --release-as 1.0.0
 ## TODO
 
 - Explain usage / deployment
-- Add Ackee analytics implementation
-- Add Next-SEO library
+- Add [Ackee analytics](https://docs.ackee.electerious.com/#/) implementation
+- Add [Next-SEO](https://github.com/garmeeh/next-seo) library
 - Add testing library (such as [Cypress](https://www.cypress.io/)) with instructions on initialization/usage
 
 ## Contributing
@@ -78,9 +78,9 @@ npm run release -- --release-as 1.0.0
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/dayvista/next.js-template/blob/master/LICENSE.txt) for more information.
 
 ## Acknowledgements
 
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
-- [Automate JavaScript project versioning with commitizen and standard-version](https://medium.com/tunaiku-tech/automate-javascript-project-versioning-with-commitizen-and-standard-version-6a967afae7) by Christian Ing Sunardi
+- [Automate JavaScript project versioning with commitizen and standard-version](https://medium.com/tunaiku-tech/automate-javascript-project-versioning-with-commitizen-and-standard-version-6a967afae7) by [Christian Ing Sunardi](https://medium.com/@christianingsunardi)
