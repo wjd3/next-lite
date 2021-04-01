@@ -2,8 +2,8 @@
 
 ## with TypeScript, form handling, back-end + auth integration, versioning, and more
 
-[![MIT License](https://img.shields.io/github/license/othneildrew/best-readme-template.svg?style=for-the-badge)](https://github.com/othneildrew/best-readme-template/blob/master/license.txt)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%dayvista%2Fnext.js-template)
+[![MIT License](https://img.shields.io/github/license/othneildrew/best-readme-template.svg?style=for-the-badge)](https://github.com/dayvista/next.js-template/blob/master/LICENSE.txt)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdayvista%2Fnext.js-template)
 
 ## Includes
 
