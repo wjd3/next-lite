@@ -12,18 +12,25 @@ const HomePage = () => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full space-y-12">
+    <div className="flex flex-col items-center justify-evenly w-full h-full space-y-12">
+      <div className="spacer" />
       <div className="flex flex-col">
-        <a
-          href="https://github.com/dayvista/next-light"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className="w-[fit-content] h-[fit-content] hover:text-blue-400 underline text-2xl font-bold"
-        >
-          next-lite
-        </a>
+        <div className="flex items-center">
+          <a
+            href="https://github.com/dayvista/next-light"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            next-lite
+          </a>
+          <p className="text-2xl pointer-events-none">🥬</p>
+        </div>
         <h2 className="text-xl font-bold">
-          The Minimalist (Yet Opinionated) Next.js Starter Template
+          The Minimalist
+          <br />
+          (Yet Opinionated)
+          <br />
+          Next.js Starter Template
         </h2>
       </div>
       <div className="flex flex-col space-y-4">
@@ -38,6 +45,18 @@ const HomePage = () => {
         </button>
         <p>Theme has been changed {count} times</p>
       </div>
+      <div className="spacer" />
+      <p className="pb-6">
+        Made by{' '}
+        <a
+          href="https://github.com/dayvista"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="text-base"
+        >
+          Liam Davis
+        </a>
+      </p>
     </div>
   );
 };
