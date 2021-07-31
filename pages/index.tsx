@@ -17,7 +17,7 @@ const HomePage = () => {
       <div className="flex flex-col">
         <div className="flex items-center">
           <a
-            href="https://github.com/dayvista/next-light"
+            href="https://github.com/dayvista/next-lite"
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
