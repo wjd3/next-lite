@@ -1,6 +1,8 @@
-# The Minimalist (Yet Opinionated) [Next.js](http://nextjs.org/) Starter Template
+# `next-lite`
 
-## Weighs in at a bundle size of 34kb vs Create-Next-App's 70kb
+## The Minimalist (Yet Opinionated) [Next.js](http://nextjs.org/) Starter Template
+
+### Weighs in at a bundle size of 34kb vs Create-Next-App's 70kb
 
 - Replaces React with [Preact](https://preactjs.com/) at build time
 - Pre-configured with:
@@ -17,27 +19,27 @@
 
 [![MIT License](https://img.shields.io/github/license/othneildrew/best-readme-template.svg?style=for-the-badge)](https://github.com/dayvista/next-light/blob/master/LICENSE.txt)
 
-### Versioning
+## Versioning
 
-#### Setting It Up
+### Setup
 
 ```js
 npx commitizen init cz-conventional-changelog --save-dev --save-exact
 ```
 
-##### Making Commits (use instead of `git commit -m "your message"`)
+#### Making Commits (instead of `git commit -m "your message here"`)
 
 ```js
 npm run commit
 ```
 
-##### Bumping Versions
+#### Bumping Versions
 
 ```js
 npm run release
 ```
 
-##### Bumping First Major Version
+#### Bumping First Major Version
 
 ```js
 npm run release -- --release-as 1.0.0

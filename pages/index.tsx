@@ -20,7 +20,7 @@ const HomePage = () => {
           rel="noopener noreferrer nofollow"
           className="w-[fit-content] h-[fit-content] hover:text-blue-400 underline text-2xl font-bold"
         >
-          next-light
+          next-lite
         </a>
         <h2 className="text-xl font-bold">
           The Minimalist (Yet Opinionated) Next.js Starter Template
