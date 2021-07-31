@@ -1,4 +1,4 @@
-# `next-lite`
+# `next-lite` 🥬
 
 ## The Minimalist (Yet Opinionated) [Next.js](http://nextjs.org/) Starter Template
 
