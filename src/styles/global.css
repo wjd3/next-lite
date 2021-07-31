@@ -10,3 +10,9 @@
     height: 100%;
   }
 }
+
+@layer utilities {
+  .spacer {
+    @apply flex-1 place-self-stretch
+  }
+}
