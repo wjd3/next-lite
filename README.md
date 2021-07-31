@@ -1,48 +1,27 @@
-# Full-Stack Next.js Starter Template
+# Lightweight Next.js Project Starter Template
 
-## TypeScript, form handling, back-end + auth integration, versioning, and more, using entirely open-source dependencies
+## 35kb bundle size vs Create-Next-App's 69kb
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdayvista%2Fnext.js-template)
-[![MIT License](https://img.shields.io/github/license/othneildrew/best-readme-template.svg?style=for-the-badge)](https://github.com/dayvista/next.js-template/blob/master/LICENSE.txt)
+- Replaces React with [Preact](https://preactjs.com/) at build time
+- Pre-configured with:
+  - [Tailwind CSS](https://tailwindcss.com) - CSS Framework with minimal effect on bundle size
+  - [Zustand](https://zustand.surge.sh/) - ~1kb State management/Redux substitute
+  - [React Hook Form](https://react-hook-form.com/) -
+  - [Typescript](https://www.typescriptlang.org/) - You know.
+  - Versioning Support via [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog) and [Standard Version](https://github.com/conventional-changelog/standard-version)
 
-## Includes
-
-- [Next.js](https://nextjs.org/) 😉
-- [TypeScript](https://nextjs.org/docs/basic-features/typescript)
-
-### Data Management / Auth
-
-- [Supabase](https://supabase.io) (Postgres Database w/ Built-in Auth & Rest API, Realtime Websocket Sync, and More!)
-- [Next Iron Session](https://github.com/vvo/next-iron-session) (Encrypted Server-Side Cookies for Auth/Data Management)
-- [Axios](https://github.com/axios/axios) (Simplified Approach to Fetching Data)
-- [Jotai](https://github.com/pmndrs/jotai) (Lightweight Local State Management)
-- [SWR](https://swr.vercel.app/) (Server-Side State Management w/ Caching)
-
-### Design / UI / UX
-
-- [Chakra UI](https://chakra-ui.com) (Wonderful Component / Design Library)
-- [Framer Motion](https://www.framer.com/api/motion/) (Equally Wonderful Animation Library)
-
-### Forms
-
-- [React Hook Form](https://react-hook-form.com/) (Simple and Performant Form Library)
-- [Vest](https://ealush.com/vest/#/) (Validation for Forms, Integrates w/ React Hook Form)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fdayvista%2Fnext-light)
+[![MIT License](https://img.shields.io/github/license/othneildrew/best-readme-template.svg?style=for-the-badge)](https://github.com/dayvista/next-light/blob/master/LICENSE.txt)
 
 ### Versioning
 
-#### Initial Versioning Setup
+#### Setting It Up
 
-1. ```js
-   npm install -g commitizen
-   ```
+```js
+npx commitizen init cz-conventional-changelog --save-dev --save-exact
+```
 
-2. ```js
-   commitizen init cz-conventional-changelog --save-dev --save-exact
-   ```
-
-#### General Commits / Versioning
-
-##### Creating Commits (instead of using `git add .` + `git commit -m "your message"`)
+##### Making Commits (use instead of `git commit -m "your message"`)
 
 ```js
 npm run commit
@@ -52,7 +31,6 @@ npm run commit
 
 ```js
 npm run release
-
 ```
 
 ##### Bumping First Major Version
@@ -60,16 +38,6 @@ npm run release
 ```js
 npm run release -- --release-as 1.0.0
 ```
-
-## TODO
-
-- Explain general usage / deployment
-- Switch to Vercel's [`release`](https://github.com/vercel/release) for versioning?
-- Create How-To section (similar to the `Versioning` section)
-- Add [Ackee analytics](https://docs.ackee.electerious.com/#/)
-- Add [Next-SEO](https://github.com/garmeeh/next-seo)
-- Add testing library (such as [Cypress](https://www.cypress.io/))
-- Consider moving to an entirely free/non-hosted back-end solution and leave database hosting up to the user (Next-Auth (Auth), Postgraphile (GraphQL adapter for Postgres DBs), Knex (SQL migrations w/ JavaScript-syntax), etc.)
 
 ## Contributing
 
@@ -86,4 +54,5 @@ Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/dayvis
 ## Acknowledgements
 
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
+- [Next.js - Replace React with Preact](https://darrenwhite.dev/blog/nextjs-replace-react-with-preact) by [Darren White](https://darrenwhite.dev/), with inspiration from [Lee Robinson](https://leerob.io/)
 - [Automate JavaScript project versioning with commitizen and standard-version](https://medium.com/tunaiku-tech/automate-javascript-project-versioning-with-commitizen-and-standard-version-6a967afae7) by [Christian Ing Sunardi](https://medium.com/@christianingsunardi)
