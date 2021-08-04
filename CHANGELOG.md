@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/dayvista/next-lite/compare/v0.2.0...v0.2.1) (2021-08-04)
+
+
+### Features
+
+* **pages/index.tsx && readme.md:** add react-hook-form example for bundle size + revise readme ([194aacc](https://github.com/dayvista/next-lite/commit/194aaccfc64a83ff60562ebd38d967fec0095ced))
+
+
+### Bug Fixes
+
+* **/pages/index.tsx:** fix link to repo ([71a0829](https://github.com/dayvista/next-lite/commit/71a08299cab3ff5683b6f6569c79cbad42274025))
+
 ## [0.2.0](https://github.com/dayvista/next-lite/compare/v0.1.2...v0.2.0) (2021-07-31)
 
 
