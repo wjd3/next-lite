@@ -1,6 +1,7 @@
 import { useTheme } from 'next-themes';
 import useStore from 'src/lib/store';
 import shallow from 'zustand/shallow';
+import { useForm } from 'react-hook-form';
 
 const HomePage = () => {
   const { theme, setTheme } = useTheme();
@@ -10,6 +11,18 @@ const HomePage = () => {
     ({ count, increaseCount }) => [count, increaseCount],
     shallow
   );
+
+  const [color, setColor] = useStore(
+    ({ color, setColor }) => [color, setColor],
+    shallow
+  );
+
+  const { register, handleSubmit, reset } = useForm();
+  const onSubmit = ({ color }: { color: string }) => {
+    setColor(color);
+
+    reset();
+  };
 
   return (
     <div className="flex flex-col items-center justify-evenly w-full h-full space-y-12">
@@ -44,6 +57,30 @@ const HomePage = () => {
           Change to {inactiveTheme} mode
         </button>
         <p>Theme has been changed {count} times</p>
+        <hr />
+        <p style={{ color: color ? color : 'initial' }}>
+          {color && colors.includes(color)
+            ? `${
+                color.charAt(0).toUpperCase() + color.substr(1)
+              } is a great color!`
+            : `What is your favorite color?`}
+        </p>
+        <form
+          className="flex flex-col space-y-2"
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <label htmlFor="color">Submit your fav color here:</label>
+          <input
+            {...register('color', { maxLength: 16 })}
+            className="mx-1 border border-solid rounded-md"
+          />
+          <button
+            type="submit"
+            className="self-end p-1 border border-solid rounded-md"
+          >
+            Submit
+          </button>
+        </form>
       </div>
       <div className="spacer" />
       <p className="pb-6">
@@ -62,3 +99,17 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+const colors = [
+  'blue',
+  'green',
+  'yellow',
+  'red',
+  'pink',
+  'purple',
+  'orange',
+  'black',
+  'white',
+  'grey',
+  'gray'
+];

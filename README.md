@@ -2,14 +2,16 @@
 
 ## The Minimalist (Yet Opinionated) [Next.js](http://nextjs.org/) Starter Template
 
-### Weighs in at a bundle size of 34kb vs Create-Next-App's 70kb
+### Includes state & form management, dark mode/color themes support, and Tailwind CSS
+
+#### Weighs in at 42kb vs. `create-next-app`'s 70kb
 
 - Replaces React with [Preact](https://preactjs.com/) at build time
 - Pre-configured with:
 
-  - [Tailwind CSS](https://tailwindcss.com) - CSS framework with minimal effect on bundle size
   - [Zustand](https://zustand.surge.sh/) - ~1kb State management/Redux substitute
   - [React Hook Form](https://react-hook-form.com/) - lightweight, performant, and extensible form management library
+  - [Tailwind CSS](https://tailwindcss.com) - CSS framework with minimal effect on bundle size
   - [Typescript](https://www.typescriptlang.org/) - you know
   - [Conventional Changelog](https://github.com/commitizen/cz-conventional-changelog) and [Standard Version](https://github.com/conventional-changelog/standard-version) - project versioning support
 
