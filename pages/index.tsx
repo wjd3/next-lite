@@ -1,7 +1,7 @@
-import { useTheme } from 'next-themes';
-import useStore from 'src/lib/store';
-import shallow from 'zustand/shallow';
 import { useForm } from 'react-hook-form';
+import shallow from 'zustand/shallow';
+import { useTheme } from 'src/lib/hooks';
+import useStore from 'src/lib/store';
 
 const HomePage = () => {
   const { theme, setTheme } = useTheme();
