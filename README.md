@@ -1,10 +1,10 @@
 # `next-lite` 🥬
 
-## The Minimalist (Yet Opinionated) [Next.js](http://nextjs.org/) Starter Template
+## Full-featured, Minimalist, and Opinionated [Next.js](http://nextjs.org/) Starter Template
 
-### Includes state & form management, dark mode/color themes support, and Tailwind CSS
+### Includes state & form management, dark mode/color theme support, and Tailwind CSS
 
-#### Weighs in at 45kb vs. `create-next-app`'s 70kb
+#### Weighs in at 45kb vs. `create-next-app`'s 71kb
 
 - Replaces React with [Preact](https://preactjs.com/) at build time
 - Pre-configured with:
