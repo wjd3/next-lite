@@ -1,21 +1,14 @@
 import { useForm } from 'react-hook-form';
-import shallow from 'zustand/shallow';
-import useStore from 'src/lib/store';
-import {useTheme} from 'next-themes'
+import { useTheme } from 'next-themes';
+import { useAtom } from 'jotai';
+
+import { colorAtom, countAtom } from 'src/lib/store';
 
 const HomePage = () => {
   const { theme, setTheme } = useTheme();
-  // const inactiveTheme = theme === 'light' && theme != null ? 'dark' : 'light';
 
-  const [count, increaseCount] = useStore(
-    ({ count, increaseCount }) => [count, increaseCount],
-    shallow
-  );
-
-  const [color, setColor] = useStore(
-    ({ color, setColor }) => [color, setColor],
-    shallow
-  );
+  const [count, setCount] = useAtom(countAtom);
+  const [color, setColor] = useAtom(colorAtom);
 
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = ({ color }: { color: string }) => {
@@ -50,11 +43,11 @@ const HomePage = () => {
         <button
           className="px-2 py-1 border border-solid rounded-md"
           onClick={() => {
-            setTheme(theme === 'light' && theme != null ? 'dark' : 'light');
-            increaseCount();
+            setTheme(theme === 'dark' ? 'light' : 'dark');
+            setCount(count + 1);
           }}
         >
-          Change to {theme === 'light' && theme != null ? 'dark' : 'light'} mode
+          Change to {theme === 'dark' ? 'light' : 'dark'} mode
         </button>
         <p>Theme has been changed {count} times</p>
         <hr />
