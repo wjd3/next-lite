@@ -1,11 +1,11 @@
 import { useForm } from 'react-hook-form';
 import shallow from 'zustand/shallow';
-import { useTheme } from 'src/lib/hooks';
 import useStore from 'src/lib/store';
+import {useTheme} from 'next-themes'
 
 const HomePage = () => {
   const { theme, setTheme } = useTheme();
-  const inactiveTheme = theme === 'light' ? 'dark' : 'light';
+  // const inactiveTheme = theme === 'light' && theme != null ? 'dark' : 'light';
 
   const [count, increaseCount] = useStore(
     ({ count, increaseCount }) => [count, increaseCount],
@@ -50,11 +50,11 @@ const HomePage = () => {
         <button
           className="px-2 py-1 border border-solid rounded-md"
           onClick={() => {
-            setTheme(inactiveTheme);
+            setTheme(theme === 'light' && theme != null ? 'dark' : 'light');
             increaseCount();
           }}
         >
-          Change to {inactiveTheme} mode
+          Change to {theme === 'light' && theme != null ? 'dark' : 'light'} mode
         </button>
         <p>Theme has been changed {count} times</p>
         <hr />
