@@ -4,12 +4,12 @@
 
 ### Includes state & form management, dark mode/color themes support, and Tailwind CSS
 
-#### Weighs in at 42kb vs. `create-next-app`'s 70kb
+#### Weighs in at 45kb vs. `create-next-app`'s 70kb
 
 - Replaces React with [Preact](https://preactjs.com/) at build time
 - Pre-configured with:
 
-  - [Zustand](https://zustand.surge.sh/) - ~1kb State management/Redux substitute
+  - [Jotai](https://jotai.pmnd.rs/) - ~2kb state management library
   - [React Hook Form](https://react-hook-form.com/) - lightweight, performant, and extensible form management library
   - [Tailwind CSS](https://tailwindcss.com) - CSS framework with minimal effect on bundle size
   - [Typescript](https://www.typescriptlang.org/) - you know
