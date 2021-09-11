@@ -1,6 +1,6 @@
 {
   "name": "next.js-template",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "scripts": {
     "preinstall": "mkdir -p ./node_modules && touch ./node_modules/.metadata_never_index",
