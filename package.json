@@ -3,6 +3,7 @@
   "version": "0.2.3",
   "private": true,
   "scripts": {
+    "preinstall": "mkdir -p ./node_modules && touch ./node_modules/.metadata_never_index",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
