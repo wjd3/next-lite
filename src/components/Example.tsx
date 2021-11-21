@@ -1,5 +1,5 @@
 const ExampleComponent = () => {
-  return <></>;
-};
+  return <></>
+}
 
-export default ExampleComponent;
+export default ExampleComponent

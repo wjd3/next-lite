@@ -11,7 +11,7 @@
   }
 
   a {
-    @apply w-fit h-fit dark:hover:text-blue-400 dark:text-blue-300 text-blue-400 hover:text-blue-500 underline text-2xl font-bold;
+    @apply dark:hover:text-blue-400 w-fit h-fit dark:text-blue-300 text-blue-400 hover:text-blue-500 underline text-2xl font-bold;
   }
 }
 

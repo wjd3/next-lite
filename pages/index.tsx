@@ -1,21 +1,21 @@
-import { useForm } from 'react-hook-form';
-import { useTheme } from 'next-themes';
-import { useAtom } from 'jotai';
+import { useForm } from 'react-hook-form'
+import { useTheme } from 'next-themes'
+import { useAtom } from 'jotai'
 
-import { colorAtom, countAtom } from 'src/lib/store';
+import { colorAtom, countAtom } from 'src/lib/store'
 
 const HomePage = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme()
 
-  const [count, setCount] = useAtom(countAtom);
-  const [color, setColor] = useAtom(colorAtom);
+  const [count, setCount] = useAtom(countAtom)
+  const [color, setColor] = useAtom(colorAtom)
 
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset } = useForm()
   const onSubmit = ({ color }: { color: string }) => {
-    setColor(color);
+    setColor(color)
 
-    reset();
-  };
+    reset()
+  }
 
   return (
     <div className="flex flex-col items-center justify-evenly w-full h-full space-y-12">
@@ -43,8 +43,8 @@ const HomePage = () => {
         <button
           className="px-2 py-1 border border-solid rounded-md"
           onClick={() => {
-            setTheme(theme === 'dark' ? 'light' : 'dark');
-            setCount(count + 1);
+            setTheme(theme === 'dark' ? 'light' : 'dark')
+            setCount(count + 1)
           }}
         >
           Change to {theme === 'dark' ? 'light' : 'dark'} mode
@@ -88,10 +88,10 @@ const HomePage = () => {
         </a>
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage
 
 const colors = [
   'blue',
@@ -105,4 +105,4 @@ const colors = [
   'white',
   'grey',
   'gray'
-];
+]

@@ -4,7 +4,7 @@
 
 ### Includes state & form management, dark mode/color theme support, and Tailwind CSS
 
-#### Weighs in at 45kb vs. `create-next-app`'s 71kb
+#### Weighs in at 49kb vs. `create-next-app`'s 76kb
 
 - Replaces React with [Preact](https://preactjs.com/) at build time
 - Pre-configured with:
@@ -12,6 +12,7 @@
   - [Jotai](https://jotai.pmnd.rs/) - ~2kb state management library
   - [React Hook Form](https://react-hook-form.com/) - lightweight, performant, and extensible form management library
   - [Tailwind CSS](https://tailwindcss.com) - CSS framework with minimal effect on bundle size
+  - [next-themes](https://github.com/pacocoursey/next-themes) - Theming utility for Next.js applications
   - [Typescript](https://www.typescriptlang.org/) - you know
   - [Conventional Changelog](https://github.com/commitizen/cz-conventional-changelog) and [Standard Version](https://github.com/conventional-changelog/standard-version) - project versioning support
 

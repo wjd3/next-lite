@@ -1,7 +1,7 @@
-import { AppProps } from 'next/app';
-import { ThemeProvider } from 'next-themes';
-import 'src/styles/global.css';
-import Head from 'next/head';
+import { AppProps } from 'next/app'
+import { ThemeProvider } from 'next-themes'
+import 'src/styles/global.css'
+import Head from 'next/head'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -17,7 +17,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
