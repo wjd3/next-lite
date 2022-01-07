@@ -3,38 +3,28 @@
   "version": "0.2.5",
   "private": true,
   "scripts": {
-    "preinstall": "mkdir -p ./node_modules && touch ./node_modules/.metadata_never_index",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "commit": "git-cz",
-    "release": "standard-version"
+    "start": "next start"
   },
   "dependencies": {
-    "jotai": "1.4.7",
+    "isomorphic-dompurify": "^0.17.0",
+    "jotai": "1.5.0",
     "next": "12.0.7",
     "next-themes": "^0.0.15",
-    "preact": "10.6.3",
+    "preact": "10.6.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-hook-form": "7.21.0"
+    "react-hook-form": "7.22.5"
   },
   "devDependencies": {
-    "@types/react": "17.0.37",
-    "autoprefixer": "^10.4.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.4.1",
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.6.0",
     "eslint-config-next": "12.0.7",
-    "postcss": "^8.4.4",
+    "postcss": "^8.4.5",
     "prettier": "^2.5.1",
-    "prettier-plugin-tailwind": "^2.2.12",
-    "standard-version": "^9.3.2",
-    "tailwindcss": "^3.0.0",
-    "typescript": "^4.5.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "tailwindcss": "^3.0.12",
+    "typescript": "^4.5.4"
   }
 }

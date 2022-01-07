@@ -13,12 +13,6 @@ module.exports = {
       '2xl': '96em'
     },
     extend: {
-      width: {
-        fit: "fit-content"
-      },
-      height: {
-        fit: "fit-content"
-      },
     }
   },
   plugins: []

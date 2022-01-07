@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { useTheme } from 'next-themes'
 import { useAtom } from 'jotai'
+import { sanitize } from 'isomorphic-dompurify'
 
 import { colorAtom, countAtom } from 'src/lib/store'
 
@@ -12,7 +13,9 @@ const HomePage = () => {
 
   const { register, handleSubmit, reset } = useForm()
   const onSubmit = ({ color }: { color: string }) => {
-    setColor(color)
+    if (color) {
+      setColor(sanitize(color))
+    }
 
     reset()
   }
