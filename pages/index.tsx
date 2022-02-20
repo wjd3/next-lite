@@ -4,6 +4,21 @@ import { useAtom } from 'jotai'
 import { sanitize } from 'isomorphic-dompurify'
 
 import { colorAtom, countAtom } from 'src/lib/store'
+const colors = [
+  'blue',
+  'green',
+  'yellow',
+  'red',
+  'pink',
+  'purple',
+  'orange',
+  'black',
+  'white',
+  'grey',
+  'gray'
+]
+
+type SubmittedData = { color: string }
 
 const HomePage = () => {
   const { theme, setTheme } = useTheme()
@@ -11,8 +26,8 @@ const HomePage = () => {
   const [count, setCount] = useAtom(countAtom)
   const [color, setColor] = useAtom(colorAtom)
 
-  const { register, handleSubmit, reset } = useForm()
-  const onSubmit = ({ color }: { color: string }) => {
+  const { register, handleSubmit, reset } = useForm<SubmittedData>()
+  const onSubmit = ({ color }: SubmittedData) => {
     if (color) {
       setColor(sanitize(color))
     }
@@ -55,9 +70,9 @@ const HomePage = () => {
         <p>Theme has been changed {count} times</p>
         <hr />
         <p style={{ color: color ? color : 'initial' }}>
-          {color && colors.includes(color)
+          {color != null && colors.includes(color)
             ? `${
-                color.charAt(0).toUpperCase() + color.substr(1)
+                color.charAt(0).toUpperCase() + color.substring(1)
               } is a great color!`
             : `What is your favorite color?`}
         </p>
@@ -95,17 +110,3 @@ const HomePage = () => {
 }
 
 export default HomePage
-
-const colors = [
-  'blue',
-  'green',
-  'yellow',
-  'red',
-  'pink',
-  'purple',
-  'orange',
-  'black',
-  'white',
-  'grey',
-  'gray'
-]
