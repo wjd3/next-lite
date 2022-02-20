@@ -4,7 +4,7 @@
 
 ### Includes state & form management, dark mode/color theme support, and Tailwind CSS
 
-#### Weighs in at 49kb vs. `create-next-app`'s 76kb
+#### Weighs in at 58kb vs. `create-next-app`'s 77kb
 
 - Replaces React with [Preact](https://preactjs.com/) at build time
 - Pre-configured with:
